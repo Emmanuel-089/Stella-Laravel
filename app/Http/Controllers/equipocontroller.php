@@ -19,7 +19,7 @@ use App\Models\ram;
 
 use Session;
 
-class autoscontroller extends Controller
+class EquipoController extends Controller
 {
    public function reportecomputadora()
    {
@@ -39,7 +39,7 @@ class autoscontroller extends Controller
                 ->join('licenciaso','licenciaso.idlicenciaso','=','equipos.idlicenciaso')
                 ->join('office','office.idlicoffice','=','equipos.idlicoffice')
                 ->join('monitor','monitor.idmonitor','=','equipos.idmonitor')
-                ->join('antivirus','antivirus.idlicantivirus','=','equipos.idlicantivirus')
+                //->join('antivirus','antivirus.idlicantivirus','=','equipos.idlicantivirus')
                 //->orderby('equipos.idequipo')
 
                 ->get();
