@@ -5,10 +5,10 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class area extends Model
+class monitor extends Model
 {
     use HasFactory;
-    protected $primaryKey = 'idarea';
-    protected $fillable=['idarea', 'nombreArea'];
+    protected $primaryKey = 'idmonitor';
+    protected $fillable=['idmonitor', 'nombreMonitor'];
     
 }
